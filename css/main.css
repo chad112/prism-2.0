@@ -1,0 +1,68 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+body {
+	background-color: #DEFFFF;
+}
+.splash-title {
+	margin-top: 10px;
+	text-decoration: none;
+	list-style-type: none;
+	position: fixed;
+	font-family: sans-serif;
+	width: 300px;
+}
+
+.nav-height {
+	height: 100px;
+	background-color: #fff;
+	z-index: 200;
+	margin: 0;
+}
+
+.logo {
+	width: 200px;
+	text-align: center;
+	margin-left: -90px;
+	position: fixed;
+	margin-top: 0;
+}
+
+.logo-position {
+	margin: 0 auto;
+	text-align: center;
+	float: center;
+}
+.nav-border {
+	border-bottom: 4px solid #DDDDDD;
+	padding-top: -50px;
+	
+}
+
+.nav-selector ul {	
+}
+.nav-selector ul li {
+	height: 100px;
+}
+.nav-selector ul li a{
+	font-size: 20px;
+	color: black;
+	text-transform: uppercase;
+	height: 120px;
+	padding-top: 35px;
+	transition: background-color 0.5s ease;
+}
+.nav-selector ul li a:hover {
+	background-color:#AA5C27 ;
+	color: #fff;
+}
+.nav-selector .active {
+	background-color:#AA5C27;
+	color: white;
+	font-weight: 800;
+}
+
+
+

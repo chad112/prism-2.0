@@ -1,0 +1,30 @@
+<div class="navbar nav-border navbar-fixed-top nav-height" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="#"><img class="splash-title"src="/img/prism-letters.png"></a>
+        </div>
+        <div class="col-xs-3 text-center logo-position">
+        <img src="/img/prism-logo.png" class="logo">
+        </div>
+        <div class="navbar-collapse collapse nav-selector">
+          <ul class="nav navbar-nav navbar-right">
+          <li><a class="active" id="work" href="#">Work</a></li>
+          <li class=""><a id="about"href="#">About</a></li>
+          <li class=""><a href="#">Blog</a></li>
+          <li class=""><a href="#">Store</a></li>
+
+        </div><!--/.navbar-collapse -->
+      </div>
+    </div>
+
+      <script>
+      $('#work').click(function(){
+        $('#page-container').load('work.html');
+      });
+      </script>
