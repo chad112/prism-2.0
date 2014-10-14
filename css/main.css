@@ -188,11 +188,29 @@ width: 200px;
 }
 .thumbnail-list {
 	height: 100px;
+	padding-top: 10px;
 	width: auto;
 	overflow-x: scroll;
 	overflow-y: hidden;
 	white-space: nowrap;
 }
+.thumbnail-list img {
+	width: 100px;
+	padding: 5px;
+	display: inline block;
+}
 
+.gallery-main h1 {
+	font-family: "proxima-nova-extra-condensed";
+	font-weight: 900;
+	text-transform: uppercase;
+}
+
+.gallery-main img {
+	padding: 5px;
+	text-align: center;
+	margin: 0 auto;
+	width: 100%;	
+}
 
 
