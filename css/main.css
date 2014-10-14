@@ -4,10 +4,20 @@
    Author's custom styles
    ========================================================================== */
 body {
-	background: #DEFFFF url('/img/pattern-noise.png');
+	background: #DEFFFF;
 	opacity: .8;
+	font-family: "proxima-nova-soft","sans-serif";
 }
-
+.texture {
+	background: url('/img/pattern-noise.png');
+	opacity: .6;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	padding-top: -150px;
+	z-index: -10;
+	margin-top: -150px;
+}
 /* Navigation */
 .splash-title {
 	margin-top: 10px;
@@ -28,7 +38,7 @@ body {
 .logo {
 	width: 200px;
 	text-align: center;
-	margin-left: -90px;
+	margin-left: -102px;
 	position: fixed;
 	margin-top: 0;
 }
@@ -44,19 +54,21 @@ body {
 	
 }
 
-.nav-selector ul {	
+.nav-selector ul {
 }
 .nav-selector ul li {
 	height: 100px;
 }
 .nav-selector ul li a{
-	font-size: 20px;
+	font-size: 30px;
 	color: black;
 	text-transform: uppercase;
 	height: 110px;
 	border-radius: 5px;
 	padding-top: 35px;
 	transition: background-color 0.5s ease;
+	font-family: "proxima-nova-extra-condensed";
+	font-weight: 900;
 }
 .nav-selector ul li a:hover {
 	background-color:#AA5C27 ;
@@ -78,7 +90,7 @@ body {
 	padding-bottom: 0;
 }
 .email {
-	width: 200px;
+	width: 212px;
 	display: inline;
 }
 .name {
@@ -108,19 +120,26 @@ width: 250px;
 height: 250px;
 border: 5px solid gray;
 position: relative;
-display: block;
+display: inline block;
 -webkit-filter: grayscale(1);
 transition:  0.35s ease;
+margin: 10px 0;
 }
 .round img {
-display: block;
+display: inline block;
 /* Stretch height: 100%; width: 100%; */
 width: 350px;
-
 }
-
+.round a {
+	text-decoration: none;
+	color: black;
+}
 .round:hover{
 	border: 5px solid #fff;
+	-webkit-filter: none;
+}
+.round a:visited{
+	border: 5px solid orange;
 	-webkit-filter: none;
 }
 
@@ -130,11 +149,45 @@ width: 350px;
 	width: 250px;
 	height: 125px;
 	position: absolute;
-	top: 0px;	
-	visibility: hidden;
+	top: -125px;	
 	z-index: 400;
+	transition: 0.35s ease;
+	opacity: .8;
+	border-bottom: 5px solid #dddddd;
 }
-.round .information:hover {
-	visibility: visible;
+.round:hover > .information {
+	top: 0;
 }
+
+.information h2{
+	font-family: "proxima-nova-extra-condensed";
+	font-weight: 900;
+}
+
+
+/* Gallery Page */
+.round-thumb {
+border-radius: 50%;
+overflow: hidden;
+width: 100px;
+height: 100px;
+border: 5px solid gray;
+position: relative;
+display: inline block;
+-webkit-filter: grayscale(1);
+transition:  0.35s ease;
+margin: 10px 0;
+}
+.round-thumb img {
+display: inline block;
+/* Stretch height: 100%; width: 100%; */
+width: 200px;
+}
+.round-thumb:hover{
+	border: 5px solid #fff;
+	-webkit-filter: none;
+}
+
+
+
 

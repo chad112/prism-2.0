@@ -14,10 +14,9 @@
         </div>
         <div class="navbar-collapse collapse nav-selector">
           <ul class="nav navbar-nav navbar-right">
-          <li><a class="active" id="work" href="#">Work</a></li>
-          <li class=""><a id="about"href="#">About</a></li>
-          <li class=""><a href="#">Blog</a></li>
-          <li class=""><a href="#">Store</a></li>
+          <li><a class="active" id="work" href="">Work</a></li>
+          <li class=""><a id="blog"href="#blog">Blog</a></li>
+          <li class=""><a id="store"href="#">Store</a></li>
 
         </div><!--/.navbar-collapse -->
       </div>
@@ -25,6 +24,23 @@
 
       <script>
       $('#work').click(function(){
-        $('#page-container').load('work.html');
+        $('#container').load('work.html');
+      });
+      $('#blog').click(function(){
+        $('#container').load('blog.html');
+      });
+      $('#store').click(function(){
+        $('#container').load('store.html');
+      });
+      $('#invite').click(function(){
+        $('#container').load('gallery.html');
       });
       </script>
+
+      <script>
+    $(".nav li a").on("click", function() {
+      $(".nav li a").removeClass("active");
+      $(this).addClass("active");
+    });
+
+</script>
