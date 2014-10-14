@@ -176,7 +176,6 @@ position: relative;
 display: inline block;
 -webkit-filter: grayscale(1);
 transition:  0.35s ease;
-margin: 10px 0;
 }
 .round-thumb img {
 display: inline block;
@@ -187,7 +186,13 @@ width: 200px;
 	border: 5px solid #fff;
 	-webkit-filter: none;
 }
-
+.thumbnail-list {
+	height: 100px;
+	width: auto;
+	overflow-x: scroll;
+	overflow-y: hidden;
+	white-space: nowrap;
+}
 
 
 
