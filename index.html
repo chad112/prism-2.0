@@ -57,10 +57,15 @@
         $( document ).ready(function() {
           $("#container"). load("/work.html");
         });
-        $('#invite').click(function(){
-          $('#container').load('gallery.html');
-      });
         </script>
+        <script>
+$('#ps').click(function(){
+        $('index.html #container').load('gallery.html #preschool, #thumbnails');
+      });
+$('#invite').click(function(){
+        $('index.html #container').load('gallery.html #invitation, #thumbnails');
+      });
+      </script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>

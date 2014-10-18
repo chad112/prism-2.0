@@ -187,7 +187,7 @@ width: 200px;
 	-webkit-filter: none;
 }
 .thumbnail-list {
-	height: 100px;
+	height: 110px;
 	padding-top: 10px;
 	width: auto;
 	overflow-x: scroll;
@@ -211,6 +211,23 @@ width: 200px;
 	text-align: center;
 	margin: 0 auto;
 	width: 100%;	
+}
+button .navbar-toggle {
+	background: url('/img/nav-button.png');	
+}
+
+@media (max-width: 1200px) {
+
+.navbar a img {
+	visibility: hidden;
+}
+}
+
+@media (max-width: 992px) {
+.navbar img.logo {
+	margin-top: -50px;
+	margin-left: -250px;
+	width: 150px;
 }
 
 
